@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ca1wackufj8"]
+
+[ext_resource type="Script" uid="uid://dxbyq22ws5pim" path="res://Mascota.gd" id="1_o56o5"]
+[ext_resource type="Texture2D" uid="uid://oylu0iegenwt" path="res://39_60 AH_165.png" id="2_1sjan"]
+
+[node name="Mascota" type="Node2D"]
+script = ExtResource("1_o56o5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(551, 282)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_1sjan")
+
+[node name="Estado" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Estado de la mascota"
