@@ -39,6 +39,12 @@ func despertar():
 	estadoActual = "despertando"
 	esta_dormido = false
 	print("%s está despierto YEIII!" % nombre)
+	
+func texto_label():
+	var label_estado = get_node("Estado")
+	label_estado.text = estadoActual
+	label_estado.text.Color()
+	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	estadoActual = "despertando"
@@ -46,4 +52,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	get_node("Estado").text = estadoActual
+	texto_label()
